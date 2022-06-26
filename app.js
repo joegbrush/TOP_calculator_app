@@ -22,7 +22,4 @@ function divide(a, b) {
   return quotient;
 }
 
-add(2, 2);
-subtract(2, 2);
-multiply(2, 2);
-divide(2, 2);
+function operate(calc, num1, num2) {}
