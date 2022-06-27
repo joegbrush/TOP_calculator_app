@@ -1,3 +1,5 @@
+let result;
+
 function add(a, b) {
   let sum = a + b;
   console.log(sum);
@@ -22,4 +24,17 @@ function divide(a, b) {
   return quotient;
 }
 
-function operate(calc, num1, num2) {}
+function operate(calc, num1, num2) {
+  if (calc == "+") {
+    return (result = add(num1, num2));
+  } else if (calc == "-") {
+    return (result = subtract(num1, num2));
+  } else if (calc == "*") {
+    return (result = multiply(num1, num2));
+  } else if (calc == "/") {
+    return (result = divide(num1, num2));
+  } else {
+    console.log(`Did not enter a know expression.`);
+  }
+}
+operate("", 6, 3);
